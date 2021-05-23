@@ -1,145 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width width=initial-scale=1">
-    <title>Sanjit</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <header class="p-2 bg-dark text-white">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" id="mainbutton" onclick="showMainPage()" class="nav-link px-2 text-white">Home</a></li>
-            <li><a href="#" id="projectbutton" onclick="showProjectPage()"class="nav-link px-2 text-white">My Projects</a></li>
-            <li><a href="#" id="journalbutton" onclick="showJournalPage()" class="nav-link px-2 text-white">My Journal</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    
-    <main id="mainpage" class="container">
-      <div class="row mt-3 p-3 p-md-5 mb-4 text-white rounded bg-dark">
-        <div class="col-md-6">
-          <h1 class="text-justify fst-italic">sanjit.cc</h1>
-          <p class="lead my-3">Hi, My name is Sanjit and welcome to my portfolio page!</p>
-        </div>
-        <div class="col-md-6">
-          <img src="Hero.JPG" alt="" class="d-block mx-lg-auto img-fluid">
-        </div>
-      </div>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+<body class="w3-flat-peter-river">
 
-      <div class="row">
-        <div class="col-md-8">
-          <h3 class="pb-4 mb-4 fst-italic border-bottom">Sections</h3>
-          <article class="blog-post">
-            <h2 class="blog-post-title">My Projects</h2>
-            <p class="blog-post-meta">Shows my projects in code meets world from Module 1 to 4</p>
-            <p></p>
-          </article>
-          <article class="blog-post">
-            <h2 class="blog-post-title">Contact Me</h2>
-            <ul class="blog-post-meta">
-              <li>Email: sanjit@outlook.sg</li>
-              
-            </ul>
-            <p></p>
-          </article>
-        </div>
-      </div>
-    </main>
+<div class="w3-bar w3-flat-midnight-blue">
+  <a href="#" class="w3-flat-emerald w3-bar-item w3-button w3-hover-green">sanjit.cc</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-black">Projects</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-black">Journal</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-black">Contact</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-black" onclick="rplc()">&#9776;</a>
+</div>
 
-    <!-- Project Page -->
-    <div id="projectpage" class="container">
-      <div class="row mb-2">
-        <!-- Project 1 -->
-        <div class="col-md-6">
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">Module 1</strong>
-              <h3 class="mb-0">Portfolio Page</h3>
-              <p class="card-text mb-auto">My first webpage! You can read all about me here!</p>
-              <a href="https://CMWFinal.rsanjit20.repl.co" class="stretched-link">Go to the page</a>
-            </div>
-          </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="col-md-6">
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">Module 1</strong>
-              <h3 class="mb-0">Wikipedia Page - Rocket</h3>
-              <p class="card-text mb-auto">I made a Wikipedia-style page about rockets here, which is one of the World's 50 Breakthrough inventions.</p>
-              <a href="https://cmwfinal.rsanjit20.repl.co/wiki.html" class="stretched-link">Go to the page</a>
-            </div>
-          </div>
-        </div>
-        <!-- Project 3 -->
-        <div class="col-md-6">
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">Module 2</strong>
-              <h3 class="mb-0">Javascript DJ</h3>
-              <p class="card-text mb-auto">This is a digital sound board you can make music with!</p>
-              <a href="https://DJ-Console.rsanjit20.repl.co" class="stretched-link">Go to page</a>
-            </div>
-          </div>
-        </div>
-        <!-- Project 4 -->
-        <div class="col-md-6">
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">Module 2</strong>
-              <h3 class="mb-0">Choose Your Own Adventure</h3>
-              <p class="card-text mb-auto">I made a choose your own adventure game about infectious diseases. There are multiple endings (good and bad ones) choose carefully!</p>
-              <a href="#" class="stretched-link">Go to page</a>
-            </div>
-          </div>
-        </div>
-        <!-- Project 5 -->
-        <div class="col-md-6">
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">Module 2</strong>
-              <h3 class="mb-0">Idol Resume</h3>
-              <p class="card-text mb-auto">This a webpage about Erno Rubik I put together through research.</p>
-              <a href="#" class="stretched-link">Go to page</a>
-            </div>
-          </div>
-        </div>
-        <!-- Project 6 -->
-        <div class="col-md-6">
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">Module 3</strong>
-              <h3 class="mb-0">Phaser Game</h3>
-              <p class="card-text mb-auto">This is a platformer game I made with the Phaser JS library.</p>
-              <a href="#" class="stretched-link">Go to page</a>
-            </div>
-          </div>
-        </div>
-        <!-- Project 7 -->
-        <div class="col-md-6">
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">Module 3</strong>
-              <h3 class="mb-0">Choropleth Map</h3>
-              <p class="card-text mb-auto">This is a Choropleth Map of Singapore residents based on 7 areas.</p>
-              <a href="#" class="stretched-link">Go to page</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<div id="navbar" class="w3-bar-block w3-flat-wisteria w3-hide w3-hide-large w3-hide-medium">
+  <a href="#" class="w3-bar-item w3-button">Projects</a>
+  <a href="#" class="w3-bar-item w3-button">Journal</a>
+  <a href="#" class="w3-bar-item w3-button">Contact</a>
+</div>
 
-    <!-- Journal Page -->
-    <div id="journalpage">
-      <iframe class="airtable-embed" src="https://airtable.com/embed/shrYGpGsIFsXa3I4I?backgroundColor=red" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-    </div>
-    
-    <script src="script.js"></script>
-  </body>
+<br />
+
+<div id="main" class="w3-container">
+
+<div id="banner" class="w3-container w3-card-4 w3-round-large w3-flat-wisteria">
+  <h1 id="banner-heading" class="w3-center">sanjit.cc</h1>
+  <h3 class="w3-center">Welcome to Sanjit's website!</h3>
+</div>
+
+<div id="sections" class="w3-row">
+<br />
+  <div class="w3-col s4 w3-flat-sun-flower w3-center">
+    <h3>Algorithms</h3>
+    <p><a href="#" class="w3-text-blue">Go to Page</a><p>
+  </div>
+  <div class="w3-col s4 w3-flat-orange w3-center">
+  <h3>Timer</h3>
+    <p><a href="#" class="w3-text-blue">Go to Page</a><p>
+  </div>
+  <div class="w3-col s4 w3-flat-carrot w3-center">
+  <h3>Contact</h3>
+    <p><a href="#" class="w3-text-blue">Go to Page</a><p>
+  </div>
+</div>
+
+<div id="sections2" class="w3-row">
+<br />
+  <div class="w3-col s4 w3-flat-sun-flower w3-center">
+    <h3>Scratch</h3>
+    <p><a href="#" class="w3-text-blue">Go to Page</a><p>
+  </div>
+  <div class="w3-col s4 w3-flat-orange w3-center">
+  <h3>Source</h3>
+    <p><a href="#" class="w3-text-blue">Go to Page</a><p>
+  </div>
+  <div class="w3-col s4 w3-flat-carrot w3-center">
+  <h3>Announcements</h3>
+    <p><a href="#" class="w3-text-blue">Go to Page</a><p>
+  </div>
+</div>
+
+
+
+</div>
+<br />
+<div id="footer" class="w3-container w3-flat-midnight-blue w3-bottom">
+<p class="w3-left">by Sanjit</p><p class="w3-right">Version w3csse-m01</p>
+</div>
+
+<script>
+function rplc() {
+  var x = document.getElementById("navbar");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
 </html>
