@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<title>sjTimer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="timerStyle.css">
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+  <h3 class="w3-bar-item w3-orange"> sjTimer Stats</h3>
+  <p class="w3-bar-item w3-button">PB: <b id="fastest"></b> </p>
+  <p class="w3-bar-item w3-button">Avg: <b id="overallAv"></b></p>
+  <p class="w3-bar-item w3-button">Times: <b id="timeList"></b></p>
+  <p class="w3-bar-item w3-button">Solves: <b id="numSolvesOut"></b></p>
+  <button class="w3-teal w3-button w3-card-4" style="width:100%" onclick="genScramble()">Generate Scramble</button>
+  
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:25%; height:100vh" class="w3-blue">
+
+<div class="w3-bar w3-teal" >
+  <h1 class="w3-bar-item">sjTimer</h1>
+</div>
+
+<div id="timeOut" class="center"><span id="min"></span><span id="colon"></span><span id="sec">0</span>.<span id="decimal">00</span></div>
+     
+</div> 
+
+<div class="w3-bottom w3-teal w3-round">Scramble: <b id="scramblearea"></b></div>
+
+
+</div>
+   <script src="timerScript.js"></script>   
+</body>
+</html>
