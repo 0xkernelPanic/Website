@@ -1,3 +1,4 @@
+
 //Cookie Handling
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
@@ -31,6 +32,9 @@ for (i = 0; i < 21; i++) {
   scramble += moves[randint] + " ";
 }
 document.getElementById("scramblearea").innerHTML = scramble
+TTk.TwistyPuzzle(3)
+	.alg("M2 E2 S2")
+	('#tp');
 }
 
 //Timer function
@@ -165,4 +169,25 @@ function formatTime(t) {
 
   out = "" + m + s + "." + c;
   return out;
+}
+
+//Inspection
+window.onIns = false
+function startIns() {
+  if (window.onIns == false) {
+  window.tiVar = setInterval(insTimer, 1000);
+  window.t = 15;
+  window.onIns = true
+  }
+}
+function insTimer() {
+  if (window.t > 0) {
+  document.getElementById("insOut").innerHTML = window.t;
+  window.t -= 1;
+}
+else {
+  t = 15
+  clearInterval(window.tiVar);
+  window.onIns = false;
+}
 }

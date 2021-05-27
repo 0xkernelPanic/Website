@@ -7,13 +7,17 @@
 <body>
 
 <!-- Sidebar -->
-<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+<div id="sidebar" class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
   <h3 class="w3-bar-item w3-orange"> sjTimer Stats</h3>
   <p class="w3-bar-item w3-button">PB: <b id="fastest"></b> </p>
   <p class="w3-bar-item w3-button">Avg: <b id="overallAv"></b></p>
   <p class="w3-bar-item w3-button">Times: <b id="timeList"></b></p>
   <p class="w3-bar-item w3-button">Solves: <b id="numSolvesOut"></b></p>
   <div class="w3-teal w3-button w3-card-4" style="width:100%" onclick="genScramble()">Generate Scramble</div>
+  <div class="w3-teal w3-button w3-card-4" style="width:100%" onclick="startIns()">Start Inspection</div>
+  <div id="tp"></div>
+
+ 
   
 </div>
 
@@ -22,6 +26,7 @@
 
 <div class="w3-bar w3-teal" >
   <h1 class="w3-bar-item">sjTimer</h1>
+  <h1 id="insOut" class="w3-bar-item w3-right" ></h1>
 </div>
 
 <div id="timeOut" class="center"><span id="min"></span><span id="colon"></span><span id="sec">0</span>.<span id="decimal">00</span></div>
@@ -32,6 +37,8 @@
 
 
 </div>
-   <script src="timerScript.js"></script>   
+   <script src="timerScript.js"></script>
+   <script src="twistysim.js"></script>  
+   
 </body>
 </html>
