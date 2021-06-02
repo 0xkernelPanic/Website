@@ -23,6 +23,10 @@ function getCookie(cname) {
 }
 
 //Scramble Generation
+function insertAfter(newNode, referenceNode) {
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
+
 const moves = ["R", "L", "U","D","F","B","R'","U'", "D'", "F'", "B'", "L'"];
 function genScramble() {
 var i;
@@ -31,11 +35,21 @@ for (i = 0; i < 21; i++) {
   var randint = Math.floor(Math.random() * moves.length);
   scramble += moves[randint] + " ";
 }
-document.getElementById("scramblearea").innerHTML = scramble
+
+document.getElementById("scramblearea").innerHTML = scramble;
+var w = screen.width / 4;
+var elem = document.getElementById("tp");
+elem.remove();
+var elem = document.createElement("div");
+elem.setAttribute("id", "tp")
+const InsBtn = document.getElementById("InsBTN");
+insertAfter(elem, InsBTN);
 TTk.TwistyPuzzle(3)
-	.alg("M2 E2 S2")
+	.alg(scramble)
+  .size({width:w, height:100})
 	('#tp');
 }
+
 
 //Timer function
 var running = false;
@@ -99,7 +113,6 @@ function run() {
     minOut.innerHTML = "";
     colon.innerHTML = "";
     running = true;
-    scramble = "";
     interval = setInterval(timer, 10);
   } else if (running) {
     running = false;
